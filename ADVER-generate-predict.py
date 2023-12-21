@@ -28,9 +28,3 @@ data = sns.load_dataset('ADVERTISING')
 X = data.drop(['SALES'],axis=1)
 Y = data.SALES.copy()
 
-modelGaussianSALES = GaussianNB()
-modelGaussianSALES.fit(X, Y)
-
-prediction = modelGaussianSALES.predict(zul)
-prediction_proba = modelGaussianSALES.predict_proba(zul)
-
