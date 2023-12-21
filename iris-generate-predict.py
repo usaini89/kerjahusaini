@@ -3,16 +3,16 @@ import pandas as pd
 import seaborn as sns
 from sklearn.naive_bayes import GaussianNB
 
-st.write("# ASVERTISING")
+st.write("# advertising")
 st.write("This app predicts the **SALES** type!")
 
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    sepal_length = st.sidebar.slider('Sepal length', 4.3, 7.9, 5.4) #MASUKAN YG MINIMUM AMOUNT DULU DAN YG MAX DAN YG DEFOLT
+    sepal_length = st.sidebar.slider('tv', 4.3, 7.9, 5.4) #MASUKAN YG MINIMUM AMOUNT DULU DAN YG MAX DAN YG DEFOLT
     #BOLEH UBAH SEPAL LENG SEBGAI NME LAIN
-    sepal_width = st.sidebar.slider('Sepal width', 2.0, 4.4, 3.4)
-    petal_length = st.sidebar.slider('Petal length', 1.0, 6.9, 1.3)
+    sepal_width = st.sidebar.slider('radio', 2.0, 4.4, 3.4)
+    petal_length = st.sidebar.slider('N.P', 1.0, 6.9, 1.3)
     petal_width = st.sidebar.slider('Petal width', 0.1, 2.5, 0.2)
     data = {'sepal_length': sepal_length, # SUSUNAN MESTI IKUT YG ATAS 
             'sepal_width': sepal_width, # SUSUNAN MESTI IKUT YG ATAS 
