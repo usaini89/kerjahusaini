@@ -24,7 +24,4 @@ zul = user_input_features()
 st.subheader('User Input parameters')
 st.write(zul)
 
-data = sns.load_dataset('ADVERTISING')
-X = data.drop(['SALES'],axis=1)
-Y = data.SALES.copy()
 
